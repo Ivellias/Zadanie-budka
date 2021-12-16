@@ -33,7 +33,7 @@ public class Loading : MonoBehaviour
         {
             if (Path.GetExtension(pathsToFiles[i]) == ".obj" || Path.GetExtension(pathsToFiles[i]) == ".OBJ")
             {
-                Debug.Log("Loading: " + pathsToFiles[i]);
+                //Debug.Log("Loading: " + pathsToFiles[i]);
                 if(File.Exists((inputPath + "/" + Path.GetFileNameWithoutExtension(pathsToFiles[i]) + ".mtl")))
                 {
                     _tmpModels[j] = new OBJLoader().Load(pathsToFiles[i], (inputPath + "/" + Path.GetFileNameWithoutExtension(pathsToFiles[i]) + ".mtl"));
